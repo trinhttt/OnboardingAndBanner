@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E1D8093250EDA3400E35616 /* OnboardingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D8092250EDA3400E35616 /* OnboardingItem.swift */; };
+		0E1D8098250EDAD800E35616 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D8097250EDAD800E35616 /* OnboardingViewController.swift */; };
+		0E1D809A250EDB4D00E35616 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1D8099250EDB4D00E35616 /* OnboardingCollectionViewCell.swift */; };
 		0ECDB15123F97DF800309994 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDB15023F97DF800309994 /* AppDelegate.swift */; };
 		0ECDB15323F97DF800309994 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDB15223F97DF800309994 /* SceneDelegate.swift */; };
 		0ECDB15523F97DF900309994 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECDB15423F97DF900309994 /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E1D8092250EDA3400E35616 /* OnboardingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingItem.swift; sourceTree = "<group>"; };
+		0E1D8097250EDAD800E35616 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = TestScrollView/Controller/OnboardingViewController.swift; sourceTree = SOURCE_ROOT; };
+		0E1D8099250EDB4D00E35616 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		0ECDB14D23F97DF800309994 /* TestScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECDB15023F97DF800309994 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ECDB15223F97DF800309994 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E1D8094250EDA7100E35616 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0E1D8097250EDAD800E35616 /* OnboardingViewController.swift */,
+				0ECDB15423F97DF900309994 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0E1D8095250EDA7D00E35616 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E1D8092250EDA3400E35616 /* OnboardingItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0E1D8096250EDA8200E35616 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E1D8099250EDB4D00E35616 /* OnboardingCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0ECDB14423F97DF800309994 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +87,11 @@
 		0ECDB14F23F97DF800309994 /* TestScrollView */ = {
 			isa = PBXGroup;
 			children = (
+				0E1D8096250EDA8200E35616 /* View */,
+				0E1D8095250EDA7D00E35616 /* Model */,
+				0E1D8094250EDA7100E35616 /* Controller */,
 				0ECDB15023F97DF800309994 /* AppDelegate.swift */,
 				0ECDB15223F97DF800309994 /* SceneDelegate.swift */,
-				0ECDB15423F97DF900309994 /* ViewController.swift */,
 				0ECDB15623F97DF900309994 /* Main.storyboard */,
 				0ECDB15923F97DFA00309994 /* Assets.xcassets */,
 				0ECDB15B23F97DFA00309994 /* LaunchScreen.storyboard */,
@@ -139,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ECDB15523F97DF900309994 /* ViewController.swift in Sources */,
+				0E1D8093250EDA3400E35616 /* OnboardingItem.swift in Sources */,
+				0E1D8098250EDAD800E35616 /* OnboardingViewController.swift in Sources */,
 				0ECDB15123F97DF800309994 /* AppDelegate.swift in Sources */,
 				0ECDB15323F97DF800309994 /* SceneDelegate.swift in Sources */,
+				0E1D809A250EDB4D00E35616 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
